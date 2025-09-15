@@ -1,0 +1,85 @@
+/* Headings */
+.typo-h1 { font-size: 2rem; line-height: 1.2; }
+.typo-h2 { font-size: 1.75rem; line-height: 1.3; }
+.typo-h3 { font-size: 1.5rem; line-height: 1.3; }
+.typo-h4 { font-size: 1.25rem; line-height: 1.4; }
+.typo-h5 { font-size: 1rem; line-height: 1.4; }
+.typo-h6 { font-size: 0.875rem; line-height: 1.4; }
+
+/* Paragraph / text */
+.typo-p,
+.typo-span,
+.typo-label,
+.typo-caption {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Small text */
+.typo-small {
+  font-size: 0.75rem;
+  line-height: 1.4;
+}
+
+/* Strong / emphasis */
+.typo-strong {
+  font-weight: bold;
+}
+.typo-em {
+  font-style: italic;
+}
+
+/* Blockquote */
+.typo-blockquote {
+  font-size: 1.25rem;
+  font-style: italic;
+  border-left: 4px solid #dee2e6;
+  padding-left: 1rem;
+  margin: 1rem 0;
+  color: #6c757d;
+}
+
+/* Inline code */
+.typo-code {
+  font-family: monospace;
+  background: #f8f9fa;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+/* Responsive scaling */
+@media (min-width: 768px) {
+  .typo-h1 { font-size: 3rem; }
+  .typo-h2 { font-size: 2.5rem; }
+  .typo-h3 { font-size: 2rem; }
+  .typo-h4 { font-size: 1.5rem; }
+  .typo-h5 { font-size: 1.25rem; }
+  .typo-h6 { font-size: 1rem; }
+
+  .typo-p,
+  .typo-span,
+  .typo-label,
+  .typo-caption {
+    font-size: 1.125rem;
+  }
+
+  .typo-small { font-size: 0.875rem; }
+}
+@media (min-width: 1200px) {
+  .typo-h1 { font-size: 4rem; }
+  .typo-h2 { font-size: 3.5rem; }
+  .typo-h3 { font-size: 3rem; }
+  .typo-h4 { font-size: 2rem; }
+  .typo-h5 { font-size: 1.5rem; }
+  .typo-h6 { font-size: 1.25rem; }
+
+  .typo-p,
+  .typo-span,
+  .typo-label,
+  .typo-caption {
+    font-size: 1.25rem;
+  }
+
+  .typo-small { font-size: 1rem; }
+}
