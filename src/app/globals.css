@@ -1,6 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Lufga";
+  src: url("../../public/fonts/lufga/LufgaExtraLight.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lufga";
+  src: url("../../public/fonts/lufga/LufgaRegular.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lufga";
+  src: url("../../public/fonts/lufga/LufgaBold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+p{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+h1{
+    margin: 0 !important;
+    padding: 0 !important;
+}
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary: #0d6efd;
+  --secondary: #6c757d;
+  --success: #198754;
+  --danger: #dc3545;
+  --warning: #ffc107;
+  --info: #0dcaf0;
+  --light: #f8f9fa;
+  --dark: #212529;  
+}
+:root {
+  --font-family: 'Lufga', Arial, Helvetica, sans-serif;
+  --font-size-base: 16px;
+  --font-size-sm: 14px;
+  --font-size-lg: 18px;
+  --line-height-base: 1.5;
+  --line-height-sm: 1.4;
+  --line-height-lg: 1.6;
+  --border-radius: 4px;
+  --transition-duration: 0.3s;
+  --transition-ease: ease-in-out;   
+}
+
+* {
+  font-family: var(--font-family);
+}
+body {
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -40,3 +100,8 @@ a {
     color-scheme: dark;
   }
 }
+
+
+
+
+

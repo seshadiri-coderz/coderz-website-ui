@@ -1,3 +1,6 @@
+"use client";
+
+import "./Typo.css";
 import React from "react";
 import PropTypes from "prop-types";
 
@@ -33,7 +36,7 @@ export default function Typo({
 
   const classes = [
     className,
-    `typo-${variant}`, // 👈 each variant maps to responsive font-size
+    `typo-${variant}`, // each variant maps to responsive font-size
     weight ? `fw-${weight}` : "",
     color ? `text-${color}` : "",
     align ? `text-${align}` : "",
@@ -51,9 +54,29 @@ export default function Typo({
 Typo.propTypes = {
   variant: PropTypes.string,
   as: PropTypes.string,
-  color: PropTypes.string, // Bootstrap colors: primary, danger, muted, etc.
+  color: PropTypes.string,
   weight: PropTypes.oneOf(["light", "normal", "bold"]),
   align: PropTypes.oneOf(["start", "center", "end"]),
   className: PropTypes.string,
   children: PropTypes.node,
+};
+
+//Footer badge
+export function Badge({ text, color = "green" }) {
+  return <span className={`badge badge-${color}`}>{text}</span>;
+}
+
+Badge.propTypes = {
+  text: PropTypes.string.isRequired,
+  color: PropTypes.oneOf(["#9ED1BA"]),
+};
+
+// Main Badge
+export function MainBadge({ text, color = "#EAEAF1" }) {
+  return <span className={`main-badge badge-${color}`}>{text}</span>;
+}
+
+MainBadge.propTypes = {
+  text: PropTypes.string.isRequired,
+  color: PropTypes.oneOf([""]),
 };

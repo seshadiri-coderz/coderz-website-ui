@@ -83,3 +83,33 @@
 
   .typo-small { font-size: 1rem; }
 }
+
+/* Footer badge */
+.badge {
+  display: inline-block;
+  text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #2B316E;
+    background-color: #9ED1BA;
+    padding: 4px 16px ;
+    border-radius: 30px;
+}
+
+.badge-green { background: #9ED1BA; }
+
+/* Main Badge */
+
+.main-badge {
+  display: inline-block;
+  text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #EAEAF1;
+    border: 1px solid #EAEAF1;
+    background-color: none;
+    padding: 10px 20px ;
+    border-radius: 70px;
+}

@@ -1,0 +1,15 @@
+/* Center modal vertically */
+.modal-dialog {
+  margin-top: 10vh;
+}
+
+/* Custom header background */
+.modal-header {
+  background-color: #f8f9fa;
+  border-bottom: 2px solid #dee2e6;
+}
+
+/* Custom footer */
+.modal-footer {
+  border-top: 2px solid #dee2e6;
+}
