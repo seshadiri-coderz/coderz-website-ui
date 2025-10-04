@@ -1,0 +1,115 @@
+.Header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 14px 0;
+  z-index: 9999;
+  transition: background-color 0.5s ease;
+}
+.Header.scrolled {
+  background-color: #040617;   
+  padding: 0;
+
+}
+  .navbar-nav {
+    gap: 33px !important;
+}
+
+.M-menu {
+  display: none;
+}
+
+.nav-link {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.nav-link :hover {
+  color: #9ED1BA !important;
+}
+
+.navbar-nav .nav-link {
+  position: relative;
+  color: #9ED1BA;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #9ED1BA;
+  transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+/* Slide-down effect for mobile menu */
+.mobile-slide {
+  animation: slideDown 0.8s ease-in-out;
+}
+
+@keyframes slideDown {
+  from {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+  }
+
+  to {
+    max-height: 600px;
+    /* adjust based on menu size */
+    opacity: 1;
+  }
+}
+.M-nav.open {
+  background-color: #040617;
+}
+/* Media Query */
+@media (max-width: 768px) {
+  .Header{
+    padding: 0;
+  }
+  .Header.scrolled {
+    .M-nav{
+    border-bottom:none;
+  }
+  }
+  .M-nav{
+    border-bottom: 0.5px solid #EAEAF1;
+  }
+  .M-menu {
+    display: block;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .navbar-nav {
+    display: none;
+  }
+
+  Button {
+    display: none;
+  }
+
+  .navbar-brand {
+    display: none;
+  }
+
+  .mobile-slide {
+    display: flex;
+    gap: 16px;
+    font-size: 16px;
+    line-height: 150%;
+    padding: 16px 12px 16px 12px;
+    font-weight: 500;
+  }
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Software Development",
+    "arrowimage": "/images/Click.svg",
+    "description":  "We build quality software solutions ranging from Enterprise Grade to Personalized solutions in all platforms like desktop, web, and mobile.",
+    "image": "/images/SD image.svg"
+  },
+  {
+    "title": "Mobile App Development",
+    "arrowimage": "/images/Click.svg",
+    "description": "We use latest technologies to build robust mobile apps like eCommerce, Real-estate and personalized apps for both Android & iOS platforms.",
+    "image": "/images/MD image.svg"
+  },
+  {
+    "title": "Website Development",
+    "arrowimage": "/images/Click.svg",
+    "description": "Modern, responsive websites built with performance, SEO, and brand alignment in mind.",
+    "image": "/images/WD Image.svg"
+  },
+  {
+    "title": "Marketing Tool Integration",
+    "arrowimage": "/images/Click.svg",
+    "description": "Connect and automate marketing platforms to power your campaigns and insights.",
+    "image": "/images/MTI.svg"
+  },
+  {
+    "title": "CRM Integration",
+    "arrowimage": "/images/Click.svg",
+    "description": "Custom storefronts designed for conversions, security, and scalability.",
+    "image": "/images/CRM.svg"
+  },
+  {
+    "title": "Web Analytics & Insights",
+    "arrowimage": "/images/Click.svg",
+    "description": "Track user behavior, optimize performance, and gain deep insight through custom analytics systems.",
+    "image": "/images/WAI.svg"
+  }
+]
