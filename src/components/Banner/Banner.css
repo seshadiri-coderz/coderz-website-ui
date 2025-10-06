@@ -1,7 +1,12 @@
 .banner {
     background-color: #12152E !important;
     color: white;
-    padding-top: 100px;
+    padding-top: 120px;
+    background-repeat: no-repeat;
+
+    background-attachment: fixed !important;
+    background-size: contain;
+
 }
 
 .banner-title h1 {

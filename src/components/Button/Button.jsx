@@ -6,10 +6,10 @@ import PropTypes from "prop-types";
 import Link from "next/link";
 import "./Button.css";
 
-export default function Button({ label, onClick, type = "button" }) {
+export default function Button({ label, variant="test",onClick, type = "button" }) {
   return (
     <button
-      className="test"
+      className={`${variant}`}
       type={type}
       onClick={onClick}
     >
