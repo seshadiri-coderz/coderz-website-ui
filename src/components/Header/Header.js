@@ -63,7 +63,7 @@ export default function Header() {
       <nav className="M-menu bg-transparent">
         <div className={`M-nav d-flex justify-content-between p-3 ${isOpen ? "open" : ""}`}>
         <Link href="/" className="m-logo d-lg-none">
-          <img src="/images/Coderz-logo.svg" alt="CoderzVisionTech" width={92} height={25.67} />
+          <img src="/images/Coderz-logo.svg" alt="CoderzVisionTech" width={92} height={25} />
         </Link>
       
         <img

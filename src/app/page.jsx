@@ -15,6 +15,7 @@ export default function Home() {
         title="Transforming Ideas into Powerful Digital Experiences"
         subtitle="We build high-performance websites, e-commerce platforms, and integrated marketing systems that drive growth and results."
         bgColor="#12152E"
+         isbtn={true}
         textColor="text-white"
         background="/images/Banner-back.svg"
         bannerimg="/images/Banner-img.svg"

@@ -126,7 +126,7 @@ export default function Footer() {
               <Typography variant="p" className="fs-6 fw-normal text-white lh-base"> All Rights Reserved.</Typography>
             </div>
             <div className="part-img d-flex justify-content-end align-items-center col-12 col-md-6">
-              <img src="/images/Part-img.svg" alt="footer-part" width={396.77} height={29.51} />
+              <img src="/images/Part-img.svg" alt="footer-part" width={396} height={29} />
             </div>
           </div>
         </div>

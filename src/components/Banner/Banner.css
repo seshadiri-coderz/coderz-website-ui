@@ -3,9 +3,9 @@
     color: white;
     padding-top: 120px;
     background-repeat: no-repeat;
-
     background-attachment: fixed !important;
     background-size: contain;
+    height: auto;
 
 }
 

@@ -16,7 +16,7 @@ export default function ContactUs({ title, description, backimg }) {
     }}>
                             <div className="contactus-content">
                                 <h1>{title}</h1>
-                                <p className="">{description}</p>
+                                <p className="text-center">{description}</p>
                             </div>
                         
                         </div>

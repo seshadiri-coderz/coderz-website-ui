@@ -22,7 +22,7 @@ export default function ServiceCard({ title, arrowimage, description, image }) {
                 </div>
                 <div className="card-image">
                     
-                    {image && <img src={image} alt={title} width={297.57} height={248.59} />}
+                    {image && <img src={image} alt={title} width={297} height={248} />}
                 </div>
                 
         </div>

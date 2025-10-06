@@ -38,7 +38,11 @@ export default function Banner({
           )}
         </div>
         <div className="d-flex justify-content-center py-4">
+          {bannerimg &&(
+
+
           <img className="img-fluid" src={bannerimg} alt="banner" />
+          )}
         </div>
       </div>
     </section>
