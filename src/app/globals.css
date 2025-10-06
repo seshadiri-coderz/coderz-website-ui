@@ -57,6 +57,8 @@ h1{
 
 * {
   font-family: var(--font-family);
+   /* background-color: #040617;*/
+   color: white; 
 }
 body {
   font-size: var(--font-size-base);

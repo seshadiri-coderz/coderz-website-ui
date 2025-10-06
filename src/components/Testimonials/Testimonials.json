@@ -1,0 +1,23 @@
+
+   [     {
+            "id": 1,
+            "name": "John Doe",
+            "role": "CEO, Company A",
+            "image": "/images/testimonials/john_doe.jpg",
+            "desc": "Coderz transformed our online presence. Their team is professional, creative, and results-driven. Highly recommend!"
+        },
+        {
+            "id": 2,
+            "name": "Jane Smith",
+            "role": "Marketing Director, Company B",
+            "image": "/images/testimonials/jane_smith.jpg",
+            "desc": "Working with Coderz was a game-changer for our business. Their innovative solutions and dedicated support made all the difference."
+        },
+        { 
+            "id": 3,
+            "name": "Mike Johnson",
+            "role": "CTO, Company C",
+            "image": "/images/testimonials/mike_johnson.jpg",
+            "desc": "The Coderz team exceeded our expectations. Their expertise in technology and design helped us achieve our goals faster than we imagined."
+        }
+    ]
