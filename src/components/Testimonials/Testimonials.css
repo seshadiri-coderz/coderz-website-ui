@@ -1,0 +1,97 @@
+.custom-arrow {
+  width: 45px;
+  height: 45px;
+  background-color: #4ce1a1;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  font-size: 1.5rem;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.custom-arrow:hover {
+  background-color: #6df0ba;
+}
+
+.testimonial-card {
+  /* background-color: #1b1f25; */
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  height: 100%;
+  padding: 24px 32px;
+  /* box-shadow: 0 0 10px rgba(255, 255, 255, 0.05); */
+  background-color: rgba(247, 247, 247, 0.08); /* #F7F7F7 at 8% opacity */
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25); 
+}
+
+.carousel-indicators {
+  justify-content: center;
+  gap: 10px;
+  position: static;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  background-color: #3a3f46;
+  border-radius: 50%;
+  border: none;
+}
+
+.carousel-indicators .active {
+  background-color: #4ce1a1;
+}
+.title{
+  font-weight: 700;
+  font-style: bold;
+  font-size: 32px;
+}
+.name-section{
+  border-left: 3px solid #EAEAF1;
+  padding-left: 14px;
+  display: flex;
+  flex-direction: column;
+  /* text-align: end; */
+  /* justify-content: start; */
+  /* align-items: center; */
+  h5{
+
+    font-weight: 600;
+   font-style: semi-bold;
+   font-size: 24px;
+  }
+}
+.sub-name{
+  color: #F7F7F7;
+  font-weight: 500;
+  font-style: medium;
+  font-size: 18px;
+}
+.main-row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+@media (max-width: 480px){
+  .main-row{
+    display: flex !important;
+    flex-direction: column !important;
+    text-align: center !important;
+  }
+}
+
+/* Mobile: display 1 card per slide */
+@media (max-width: 768px) {
+  .carousel-item .row {
+    flex-direction: column !important; /* stack cards vertically */
+  }
+  .carousel-item .col-md-6 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+}

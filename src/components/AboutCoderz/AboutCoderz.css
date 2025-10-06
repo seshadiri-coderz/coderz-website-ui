@@ -1,0 +1,58 @@
+.gap-css {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.gap-css h2 {
+  font-weight: 700;
+  font-style: bold;
+}
+
+.gap-css p {
+  font-weight: 500;
+  font-style: medium;
+  font-size: 18px;
+}
+
+.variant-css-1 {
+  /* custom styles for variant 1 */
+}
+
+.variant-css-2 {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap; /* ensures wrapping on small screens */
+}
+
+/* ✅ Mobile responsiveness */
+@media (max-width: 768px) {
+  .gap-css {
+    flex-direction: column !important; /* stack on small screens */
+    text-align: center; /* center text for mobile */
+  }
+
+  .variant-css-2 {
+    flex-direction: column; /* stack content */
+    align-items: center;
+  }
+
+  .gap-css p {
+    font-size: 16px; /* smaller font for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .gap-css p {
+    font-size: 16px;
+    font-weight: 500;
+    font-style: medium;
+  }
+
+  .gap-css h2 {
+    font-size: 28px;
+    font-weight: 600;
+    font-style: semi-bold;
+  }
+}

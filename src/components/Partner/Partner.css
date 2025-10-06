@@ -1,0 +1,33 @@
+body{
+    background-color: #040617;
+    color: white;
+}
+.partner{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px 0;
+}
+.partner h1{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 150%;
+    text-align: center;
+}
+
+.partner-imgs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+
+/* Media Query */
+@media (max-width: 768px) {
+    .partner-imgs{
+    display: flex;
+    flex-direction: column;
+ 
+}
+}

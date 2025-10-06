@@ -1,0 +1,104 @@
+.team-card {
+  position: relative;
+  /* width: 500px; */
+  border-radius: 12px;
+  /* overflow: hidden; */
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+}
+
+/* logo styles */
+
+.logo {
+  /* width: 40px;
+  height: 40px; */
+  /* object-fit: contain; */
+
+}
+
+/* image wrapper */
+.image-container {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.team-img {
+  width: 100%;
+  /* height: auto; */
+  /* border-radius: 8px; */
+}
+
+/* different styles for variants if needed */
+.variant-1 {
+  .logo-container {
+  position: absolute;
+  top: -18px;
+  left: -24px;
+  background: transparent;
+
+}
+
+}
+
+.variant-2 {
+ .logo-container {
+  position: absolute;
+  top: -18px;
+  right: -24px;
+  background: transparent;
+
+}
+
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .team-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 16px;
+    padding-top: 32px;
+  }
+
+  .logo-container {
+    /* position: static !important; */
+    /* margin-bottom: 12px; */
+    display: flex;
+    justify-content: center;
+  }
+
+  .logo {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+  }
+
+  .image-container {
+    justify-content: center !important;
+  }
+
+  .team-img {
+    width: 100%;
+    max-width: 292px;
+    height: auto;
+    /* border-radius: 10px; */
+  }
+  .variant-1 .logo-container {
+    /* position: static !important; */
+    top: 10;
+    left: 12px;
+    
+  }
+  .variant-2 .logo-container {
+    /* position: static !important; */
+    top: 10px;
+    right: 12px;
+    
+  }
+}
+

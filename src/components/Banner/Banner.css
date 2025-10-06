@@ -1,0 +1,53 @@
+.banner {
+    background-color: #12152E !important;
+    color: white;
+    padding-top: 120px;
+    background-repeat: no-repeat;
+
+    background-attachment: fixed !important;
+    background-size: contain;
+
+}
+
+.banner-title h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 150%;
+    text-align: center;
+}
+
+.banner-title p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.banner-title {
+    gap: 20;
+}
+
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+
+/* Media Query */
+@media (max-width: 768px) {
+    /* .banner{
+        padding: 0 16px 0 16px;
+    } */
+    .banner-title h1 {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 150%;
+        text-align: center;
+    }
+
+    .banner-title p {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 150%;
+    }
+}

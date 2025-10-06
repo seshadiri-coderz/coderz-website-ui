@@ -1,0 +1,12 @@
+[
+  { "name": "Simply-weight", "image": "/images/Simply-weight.svg" },
+  { "name": "London-obcity", "image": "/images/London-Obesity.svg" },
+  { "name": "Enexio", "image": "/images/Enexio.svg" },
+  { "name": "Concolor", "image": "/images/Concolor.svg" },
+  { "name": "Propinfo", "image": "/images/Prop-info.svg" },
+  { "name": "Fonda-Global", "image": "/images/Fonda-Global.svg" },
+  { "name": "Kings-Security", "image": "/images/Kings-Security.svg" },
+  { "name": "Ombre", "image": "/images/Ombre.svg" },
+  { "name": "Hyundai", "image": "/images/Hyundai.svg" },
+  { "name": "Maze", "image": "/images/Maze.svg" }
+]
