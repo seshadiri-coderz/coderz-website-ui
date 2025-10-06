@@ -5,9 +5,11 @@
   padding: 14px 0;
   z-index: 9999;
   transition: background-color 0.5s ease;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(71px);
+  border-bottom: 0.5px solid #EAEAF1;
 }
 .Header.scrolled {
-  background-color: #040617;   
   padding: 0;
 
 }
@@ -68,18 +70,11 @@
     opacity: 1;
   }
 }
-.M-nav.open {
-  background-color: #040617;
-}
+
 /* Media Query */
 @media (max-width: 768px) {
   .Header{
     padding: 0;
-  }
-  .Header.scrolled {
-    .M-nav{
-    border-bottom:none;
-  }
   }
   .M-nav{
     border-bottom: 0.5px solid #EAEAF1;
@@ -96,7 +91,7 @@
     display: none;
   }
 
-  Button {
+  .header-btn{
     display: none;
   }
 
@@ -113,3 +108,5 @@
     font-weight: 500;
   }
 }
+
+

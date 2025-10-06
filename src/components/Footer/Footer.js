@@ -42,7 +42,7 @@ export default function Footer() {
 
         <hr className="" style={{ borderTop: "2px solid #9ED1BA", margin: "1rem 0" }} />
 
-        <div className="footer-nav row text-center text-md-start py-4">
+        <div className="footer-nav row  text-md-start py-4">
           {/* left column: full width on mobile, 5 cols on md+ */}
           <div className="col-12 col-md-5">
             <div className="row">
@@ -56,8 +56,8 @@ export default function Footer() {
                 </ul>
               </div>
 
-              <div className="col-6 col-md-6">
-                <ul className="list-unstyled d-flex flex-column gap-3">
+              <div className="col-6 col-md-6 privacy">
+                <ul className="list-unstyled d-flex flex-column justify-content-start gap-3">
                   <li><Link href="" className="info fs-6 fw-normal text-white lh-base">Privacy Policy</Link></li>
                   <li><Link href="" className="info fs-6 fw-normal text-white lh-base">Terms & Conditions</Link></li>
                   <li><Link href="" className="info fs-6 fw-normal text-white lh-base">Refund & Cancellation Policies</Link></li>
@@ -75,7 +75,7 @@ export default function Footer() {
                     <Badge text="India" color="green" />
                   </p>
                 </div>
-                <div className="d-flex gap-1">
+                <div className="d-flex gap-1 address ">
                   <img className="" src="/images/Location-icon.svg" alt="location" width={18} height={22.21} />
                   <Typography variant="p" className="fs-6 fw-normal text-white lh-base mb-0">AP 2261, H Block 10th Street, Kathiravan Colony, Anna Nagar West, Chennai - 600040</Typography>
                 </div>
@@ -86,7 +86,7 @@ export default function Footer() {
                     <Badge text="India" color="green" />
                   </p>
                 </div>
-                <div className="d-flex gap-1">
+                <div className="d-flex gap-1address ">
                   <img className="" src="/images/Location-icon.svg" alt="location" width={18} height={22.21} />
                   <Typography variant="p" className="fs-6 fw-normal text-white lh-base mb-0">Plot No 3978, 6th Avenue, S Block, Anna Nagar, Chennai - 600040, India</Typography>
                 </div>
@@ -97,7 +97,7 @@ export default function Footer() {
                     <Badge text="United Kingdom" color="green" />
                   </p>
                 </div>
-                <div className="d-flex gap-1">
+                <div className="d-flex gap-1 address ">
                   <img className="" src="/images/Location-icon.svg" alt="location" width={18} height={22.21} />
                   <Typography variant="p" className="fs-6 fw-normal text-white lh-base mb-0">Titan Business Centre, Park House, Bradford Road, Birstall, West Yorkshire, WF17 9PH</Typography>
                 </div>
@@ -120,13 +120,13 @@ export default function Footer() {
 
           <hr className="" style={{ borderTop: "2px solid #9ED1BA", margin: "1rem 0" }} />
 
-          <div className="privacy row">
+          <div className="copyright">
             <div className="d-flex flex-column  gap-1 col-12 col-md-6">
               <Typography variant="p" className="fs-6 fw-normal text-white lh-base"> Copyright © {new Date().getFullYear()} by Coderz Vision Technology.</Typography>
               <Typography variant="p" className="fs-6 fw-normal text-white lh-base"> All Rights Reserved.</Typography>
             </div>
             <div className="part-img d-flex justify-content-end align-items-center col-12 col-md-6">
-              <img src="/images/Part-img.svg" alt="facebook" width={396.77} height={29.51} />
+              <img src="/images/Part-img.svg" alt="footer-part" width={396.77} height={29.51} />
             </div>
           </div>
         </div>

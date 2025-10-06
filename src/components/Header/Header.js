@@ -26,6 +26,13 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Drop Down
+
+  const [openDropdown, setOpenDropdown] = useState(null);
+
+  const toggleDropdown = (menu) => {
+    setOpenDropdown(openDropdown === menu ? null : menu);
+  };
   return (
     <>
 <div className={`Header ${scrolled ? "scrolled" : ""}`}>
@@ -43,12 +50,12 @@ export default function Header() {
           <Link href="/about-coderz" className="nav-link fs-6 fw-normal text-white">About</Link>
           <Link href="/services" className="nav-link fs-6 fw-normal text-white">Services</Link>
           <Link href="/salesforce" className="nav-link fs-6 fw-normal text-white">Salesforce</Link>
-          <Link href="/portfolio" className="nav-link fs-6 fw-normal text-white">Portfolio</Link>
-          <Link href="/contact-us" className="nav-link fs-6 fw-normal text-white">Contact Us</Link>
+          <Link href="/coderz-portfolio" className="nav-link fs-6 fw-normal text-white">Portfolio</Link>
+          <Link href="/contact" className="nav-link fs-6 fw-normal text-white">Contact Us</Link>
         </div>
 
         
-        <div className="d-none d-lg-block">
+        <div className="d-none d-lg-block header-btn">
           <Button label="Request CallBack" onClick={handleClick} />
         </div>
 </div>
@@ -69,20 +76,21 @@ export default function Header() {
       </div>
     
       {isOpen && (
-        <div className="mobile-slide bg-dark text-white d-lg-none">
+        <div className="mobile-slide text-white d-lg-none">
           <div className="M-menu d-flex flex-column gap-3">
-            <Link href="/" className="nav-link text-white" onClick={() => setIsOpen(false)}>Home</Link>
-            <Link href="/about-coderz" role="button"className="nav-link text-white" onClick={() => setIsOpen(false)}>About</Link>
-            <Link href="/services" className="nav-link text-white" onClick={() => setIsOpen(false)}>Services</Link>
-            <Link href="/salesforce" className="nav-link text-white" onClick={() => setIsOpen(false)}>Salesforce</Link>
-            <Link href="/portfolio" className="nav-link text-white" onClick={() => setIsOpen(false)}>Portfolio</Link>
-            <Link href="/contact-us" className="nav-link text-white" onClick={() => setIsOpen(false)}>Contact Us</Link>
+            <Link href="/" className="M-nav-link text-white" onClick={() => setIsOpen(false)}>Home</Link>
+              <Link href="/about-coderz" role="button"className="M-nav-link text-white" onClick={() => setIsOpen(false)}>About</Link>
+            <Link href="/services" className="M-nav-link text-white" onClick={() => setIsOpen(!isOpen)}>Services</Link>
+            <Link href="/salesforce" className="M-nav-link text-white" onClick={() => setIsOpen(false)}>Salesforce</Link>
+            <Link href="/portfolio" className="M-nav-link text-white" onClick={() => setIsOpen(false)}>Portfolio</Link>
+            <Link href="/contact-us" className="M-nav-link text-white" onClick={() => setIsOpen(false)}>Contact Us</Link>
 
             {/* <div className="mt-2">
               <Button label="Request CallBack" onClick={handleClick} />
             </div> */}
           </div>
         </div>
+        
       )}
     </nav>
 </div>

@@ -1,0 +1,28 @@
+
+.Benifits-card-image p{
+    font-size: 24px;
+    font-weight: 600;
+  
+}
+
+.Benifits-card-image{
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    background-color: #F7F7F71F;
+    padding: 16px 0 16px 16px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+    .Benifits-card-image{
+        padding: 16px;
+    }
+    .Benifits-card-image p{
+    font-size: 20px;
+    font-weight: 600;
+}
+}

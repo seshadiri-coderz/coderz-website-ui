@@ -1,0 +1,36 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+}
+.form-container input{
+        background-color: transparent;
+
+}
+
+.form-container input,
+.form-container textarea {
+    background-color: transparent;
+    border: 1px solid #BABABA;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    outline: none;
+    width: 100%;
+}
+
+.form-container textarea {
+    min-height: 136px;
+}
+.contact-submit-btn button{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+ 
+}
+
+.form-container{
+    font-size: 14px;
+    font-weight: 400;
+}
